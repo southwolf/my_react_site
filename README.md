@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Learning React + Webpack + Rails
 
-Things you may want to cover:
+Add in `Gemfile`
 
-* Ruby version
+```ruby
+gem 'react-rails', github: 'reactjs/react-rails' # Supports Webpack 3+, see https://github.com/reactjs/react-rails/pull/777
+gem 'webpacker'
+```
 
-* System dependencies
+Run 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rails webpacker:install
+rails webpacker:install:react
+rails generate react:install
+```
